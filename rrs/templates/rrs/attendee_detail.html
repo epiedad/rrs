@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h3>Attendee Detail</h3>
+<hr>
+<dl>
+    <dt>First Name:</dt>
+    <dd>{{ object.first_name }}</dd><br/>
+    <dt>Last Name:</dt>
+    <dd>{{ object.last_name }}</dd><br/>
+    <dt>Age:</dt>
+    <dd>{{ object.age }}</dd><br/>
+    <dt>Gender:</dt>
+    <dd>{{ get_gender }}</dd><br/>
+    <dt>Session Attended:</dt>
+    <dd>{{ object.session.title }}</dd><br/>
+</dl>
+{% endblock %}

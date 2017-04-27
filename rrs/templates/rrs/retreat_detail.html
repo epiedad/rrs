@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h3>Retreat Detail</h3>
+<hr>
+<dl>
+    <dt>Retreat ID:</dt>
+    <dd>{{ object.retreat_id }}</dd><br/>
+    <dt>Retreat Name:</dt>
+    <dd>{{ object.name }}</dd><br/>
+    <dt>Retreat Description:</dt>
+    <dd>{{ object.description }}</dd><br/>
+    <dt>Retreat Date:</dt>
+    <dd>{{ object.retreat_datetime }}</dd>
+</dl>
+{% endblock %}

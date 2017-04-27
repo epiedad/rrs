@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h3>Session Detail</h3>
+<hr>
+<dl>
+    <dt>Retreat ID:</dt>
+    <dd>{{ object.retreat.retreat_id }}</dd><br/>
+    <dt>Session Type:</dt>
+    <dd>{{ session_type }}</dd><br/>
+</dl>
+{% endblock %}
